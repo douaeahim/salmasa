@@ -1,0 +1,87 @@
+/*google fonta*/
+@import url( https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display);
+*{
+font-family: "poppins" sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-padding-top: 2rem ;
+list-style: none;
+text-decoration: none;
+scroll-behavior: smooth;
+}
+
+/*Variables */
+:root {
+--main-color: #Ff7c03;
+--main-light-color: #ff8b1f ;
+--container-color:#f8f7fc ;
+--bg-color: #fff;
+--text-color:#fff;
+}
+
+img {
+width: 100%;
+}
+
+body{
+   color:white;
+}
+
+section{
+padding: 4.5rem 0 2rem ;
+}
+
+.container{
+max-width: 938px;
+margin-left: auto;
+margin-right: auto;
+}
+
+header{
+display: flex;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+background-color: var(--bg-color);
+padding: 20px 0;
+align-items: center;
+justify-content: space-between;
+}
+
+.nav{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+/*space between navigation*/
+flex: 1;
+}
+
+.nav a{
+color: var(--main-color);
+text-decoration: none;
+font-weight: 500;
+
+}
+
+.logo {
+
+margin-right: auto;
+/*Align logo to the left*/
+
+}
+
+.nav-icons {
+display: flex ;
+gap: 1rem;
+margin-left: auto;
+/*Align icons to the right*/
+
+}
+
+
+
+

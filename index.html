@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Store</title>
+   <style>
+      .hero {
+    background: url('https://www.bing.com/images/search?view=detailV2&ccid=tC36nRnW&id=7618A475A9B512C6BCD6DD5753CCAD429642F07A&thid=OIP.tC36nRnW9GmiHqA4GiD2QAHaE_&mediaurl=https%3a%2f%2flogos.flamingtext.com%2fName-Logos%2fMark-design-fluffy-name.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b42dfa9d19d6f469a21ea0381a20f640%3frik%3devBClkKtzFNX3Q%26pid%3dImgRaw%26r%3d0%26sres%3d1%26sresct%3d1%26srh%3d799%26srw%3d1189&exph=383&expw=568&q=logo+for+my+mark+techerts&simid=608005973712192269&FORM=IRPRST&ck=6023958091009763F94FB31187CCC2B5&selectedIndex=7&itb=0') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+    body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   margin: 0;
+}
+
+.nav-links a {
+   color: #fff;
+   text-decoration: none;
+}
+
+.hero {
+   text-align: center;
+   padding: 100px 20px;
+   background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+   color: white;
+}
+
+.products {
+   padding: 50px 20px;
+   text-align: center;
+   background-color: #f4f4f4;
+}
+
+.product-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   margin-top: 20px;
+}
+
+.product-card {
+   background: white;
+   border: 1px solid #ddd;
+   border-radius: 8px;
+   overflow: hidden;
+   text-align: center;
+   padding: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+   width: 100%;
+   height: auto;
+   border-bottom: 1px solid #ddd;
+}
+
+button {
+   background-color: #333;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   border-radius: 4px;
+}
+
+button:hover {
+   background-color: #555;
+}
+.contact-form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+   </style>
+</head>
+<body>
+    <header>
+      <header>
+         <nav>
+             <div class="logo">T-Shirt Store</div>
+             <ul class="nav-links">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="html/products.html">Products</a></li>
+                 <li><a href="https://www.instagram.com/douaeahim/ ">Contact</a></li>
+                 <li><a href="https://wa.me/+212640127865" target="_blank" style="color: #25D366; font-weight: bold;">WhatsApp</a></li>
+             </ul>
+         </nav>
+     </header>
+     
+    </header>
+    <main id="home">
+        <section class="hero">
+            <h1 >Welcome to T-Shirt Store</h1>
+            <p>Find your perfect style!</p>
+            <button onclick="scrollToSection('products')">Shop Now</button>
+        </section>
+        <section id="products" class="products">
+            <h2>Our T-Shirts</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Les produits seront ajoutés dynamiquement ici -->
+            </div>
+        </section>
+      </section>
+      <section id="contact">
+          <div class="contact-form">
+              <h2>Contact Us</h2>
+              <form action="#" method="POST">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
+      </section>
+    </main>
+    <footer id="contact">
+        <p>&copy; 2024 T-Shirt Store. All rights reserved.</p>
+    </footer>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

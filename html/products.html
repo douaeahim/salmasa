@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits</title>
+    <style>
+
+        .hero {
+    background: url('https://www.bing.com/ck/a?!&&p=ae260415b1eb5e4c8d9b8d93b017b85214fac33ccc5def7247238411e1a414cfJmltdHM9MTczMTYyODgwMA&ptn=3&ver=2&hsh=4&fclid=10584b6c-726b-64f2-356b-5fb673ac6593&u=a1L2ltYWdlcy9zZWFyY2g_cT1sb2dvJTIwZm9yJTIwbXklMjBtYXJrJTIwdGVjaGVydHMmRk9STT1JUUZSQkEmaWQ9MEMxOTkwQTNFQTA1MDQ0RTQ5QTZGMjI0OTc4RjJCMzVBRURDOEM2RQ&ntb=1') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .products {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .product-card p {
+            color: #666;
+            font-size: 14px;
+            margin: 0 10px 10px;
+        }
+
+        .product-card button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #555;
+        }
+        header {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+}
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 20px;
+   margin: 0;
+}
+
+.nav-links a {
+   color: #fff;
+   text-decoration: none;
+}
+    </style>
+</head>
+<body>
+
+  
+    <header>
+        <nav>
+            <div class="logo">T-Shirt Store</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="https://www.instagram.com/douaeahim/">Contact</a></li>
+                <li><a href="https://wa.me/+212640127865" target="_blank" style="color: #25D366; font-weight: bold;">WhatsApp</a></li>
+            </ul>
+        </nav>
+    
+        <h1>Nos Produits</h1>
+    </header>
+    <main class="products">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="../imgs/home.png" alt="Produit 1">
+                <h3>T-shirt Cool</h3>
+                <p>Un t-shirt confortable et élégant.</p>
+                <button>Ajouter au Panier</button>
+            </div>
+            <div class="product-card">
+                <img src="../imgs/new3.png" alt="Produit 2">
+                <h3>T-shirt Sport</h3>
+                <p>Idéal pour vos séances de sport.</p>
+                <button>Ajouter au Panier</button>
+            </div>
+            <div class="product-card">
+                <img src="../imgs/shop3.png" alt="Produit 3">
+                <h3>T-shirt Vintage</h3>
+                <p>Un style rétro qui ne se démode jamais.</p>
+                <button>Ajouter au Panier</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
